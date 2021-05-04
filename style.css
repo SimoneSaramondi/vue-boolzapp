@@ -14,3 +14,67 @@
     background-color: white;
     height: 90vh;
 }
+
+.leftColumn{
+    width: 30%;
+    height: 100%;
+    border-right: 2px solid lightgray;
+}
+
+.myProfile{
+    height: 60px;
+    display: flex;
+    background-color: rgb(236, 233, 233);
+}
+.myImg img{
+    height: 100%;
+    border-radius: 50%;
+}
+.distanziatore{
+    flex-grow: 1;
+}
+.icone i{
+    padding-top: 20px;
+    font-size: 20px;
+    margin: 0px 10px;
+}
+
+.notfication{
+    height: 70px;
+    border-bottom: 1px solid;
+    background-color: rgb(132, 197, 240);
+    padding: 10px;
+    display: flex;
+}
+.myNotification{
+    width: 50px;
+    height: 100%;
+    border-radius: 50%;
+    background-color: white;
+    margin-right: 20px;
+    
+}
+.myNotification i{
+    padding: 15px;
+    color: rgb(132, 197, 240);
+}
+
+.search{
+    height: 40px;
+    border-bottom: 1px solid;
+    padding: 5px 10px;
+    background-color: rgb(236, 233, 233) ;
+    
+}
+.barraDiRicerca{
+    background-color: white;
+    height: 30px;
+    border-radius: 15px;
+    display: flex;
+    padding: 7px;
+}
+.barraDiRicerca input{
+    margin-left: 10px;
+    width: 300px;
+    border-color: transparent;
+}
