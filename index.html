@@ -52,7 +52,19 @@
 
                 <!--Miei contatti-->
                 <div class="myContacts">
-                    
+
+                    <div class="contctsSpace" v-for="user in usersList">
+
+                        <div class="contactsImg">
+                            <img :src="getAvatarPath(user.avatar)" alt="">
+                        </div> 
+
+                        <div>
+                            {{user.name}}
+                        </div>
+
+                    </div>
+
                 </div>
             </div>
             <!--Colonna di destra-->

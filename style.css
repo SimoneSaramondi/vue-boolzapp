@@ -41,7 +41,6 @@
 
 .notfication{
     height: 70px;
-    border-bottom: 1px solid;
     background-color: rgb(132, 197, 240);
     padding: 10px;
     display: flex;
@@ -61,7 +60,6 @@
 
 .search{
     height: 40px;
-    border-bottom: 1px solid;
     padding: 5px 10px;
     background-color: rgb(236, 233, 233) ;
     
@@ -77,4 +75,13 @@
     margin-left: 10px;
     width: 300px;
     border-color: transparent;
+}
+.contctsSpace{
+    height: 60px;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+}
+.contactsImg img{
+    height: 100%;
+    border-radius: 50%;
 }
