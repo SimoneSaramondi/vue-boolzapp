@@ -1,0 +1,16 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.globalContainer{
+    height: 100vh;
+    background-color: rgb(26, 92, 70);
+    padding: 40px 70px;
+}
+
+.container{
+    background-color: white;
+    height: 90vh;
+}
