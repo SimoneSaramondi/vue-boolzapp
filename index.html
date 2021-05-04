@@ -23,12 +23,12 @@
                     <div class="myImg">
                         <img src="img/avatar_io.jpg" alt="">
                     </div>
-                    <div class="distanziatore"></div>
+                    <div class="distanziatore"></div> 
                     <div class="icone">                        
                         <i class="fas fa-circle-notch"></i>
                         <i class="far fa-comment-alt"></i>
                         <i class="fas fa-ellipsis-v"></i>
-                    </div>                
+                    </div>          
                 </nav>
 
                 <!--Barra notifiche-->
@@ -53,13 +53,13 @@
                 <!--Miei contatti-->
                 <div class="myContacts">
 
-                    <div class="contctsSpace" v-for="user in usersList">
+                    <div class="contctsSpace" v-for="(user, indice) in usersList" @click="changeActiveUser(indice)">
 
                         <div class="contactsImg">
                             <img :src="getAvatarPath(user.avatar)" alt="">
                         </div> 
 
-                        <div>
+                        <div class="nomeContatto">
                             {{user.name}}
                         </div>
 
@@ -67,8 +67,45 @@
 
                 </div>
             </div>
+
             <!--Colonna di destra-->
-            <div class="rightColumn"></div>
+            <div class="rightColumn">
+
+                <!--Con chi sto chattando-->
+                <div class="contatChat">
+                    <div class="imgMessaggiato">
+                        a
+                    </div>
+                    <div class="nomeMessaggiato">
+                        {{userActive.name}}
+                    </div>
+                    <div class="iconeMessaggiato">
+                        <i class="fas fa-search"></i>
+                        <i class="fas fa-paperclip"></i>
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                </div>
+
+                <!--Messaggistica-->
+                <div class="mainChat">
+                    
+                </div>
+
+                <!--Scrittura del messaggio-->
+                <div class="textChat">
+
+                    <div class="emoticon">
+                        <i class="far fa-smile-beam"></i>
+                    </div>
+                    <div class="text">
+                        <input type="text" placeholder="Scrivi un messaggio">
+                    </div>
+                    <div class="sendMessagge">
+                        <i class="fab fa-telegram-plane"></i>
+                    </div>
+
+                </div>
+            </div>
         </div>
     </div>
     

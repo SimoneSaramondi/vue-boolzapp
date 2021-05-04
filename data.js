@@ -65,7 +65,7 @@ const globalUsersList = [
         ],
     },
     {
-        name: 'Luisa',
+        name: 'Marco',
         avatar: '_4',
         visible: true,
         messages: [
@@ -99,7 +99,7 @@ const globalUsersList = [
         ],
     },
     {
-        name: 'Elia',
+        name: 'Cristina',
         avatar: '_6',
         visible: true,
         messages: [
@@ -116,7 +116,7 @@ const globalUsersList = [
         ],
     },
     {
-        name: 'Cristina',
+        name: 'Elia',
         avatar: '_8',
         visible: true,
         messages: [
