@@ -104,7 +104,6 @@
     border-bottom: 1px solid lightgray;
     background-color:rgb(236, 233, 233);
     display: flex;
-    /*padding: 15px;*/
 }
 .contatChat i{
     font-size: 18px;
@@ -148,6 +147,20 @@
 }
 .contact-active {
     background-color: #e0d9d9;
+}
+.message.received{    
+    padding: 10px;
+    margin: 5px;
+    background-color: rgb(224, 235, 184);
+    border-radius: 10px;
+    
+}
+.message.sent{
+    background-color: rgb(155, 204, 155);
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    text-align: end;
 }
 
 
