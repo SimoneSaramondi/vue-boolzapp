@@ -9,12 +9,15 @@ const app = new Vue({
     },
     
     methods: {
+        // IMMAGINI DI TUTTI I CONTATTI
         getAvatarPath(userAvatar){
             return `img/avatar${userAvatar}.jpg`
         },
+        // INDICE DELL'UTENTE CHE CON CUI CHATTO
         changeActiveUser(indice){
             this.userActive = this.usersList[indice]
         },
+        // MANDARE UN MESSAGGIO
         sendMessage(){
 
             if(this.newMessage.trim().length != 0){
@@ -31,7 +34,7 @@ const app = new Vue({
 
                 this.newMessage= "";
 
-                // risposta del messaggiato 
+                // RISPOSTA AL MIO MESSAGGIO
                 setTimeout(function() {
 
                     let pcMesssage = {
@@ -46,6 +49,7 @@ const app = new Vue({
             }
             
         },
+        // CERCA UN NOME ALL'INTERNO DEI MIEI CONTATTI
         search() {
             this.usersList.forEach((user) => {
                 let contactName = user.name.toLowerCase();
@@ -57,6 +61,7 @@ const app = new Vue({
                 }
             });
         },  
+        // ORARIO DELLA CHAT
         formatTime(date) {
             return moment(date, "DD/MM/YYYY HH:mm:ss").format('HH:mm');
         }        

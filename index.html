@@ -83,7 +83,7 @@
                     <div class="nomeMessaggiato">
                         <b>{{userActive.name}}</b>
                         <br>
-                        <span>Ultimo accesso</span>
+                        <span>Ultimo accesso ore: 00:00</span>
                     </div>
                     <div class="iconeMessaggiato">
                         <i class="fas fa-search"></i>
@@ -94,11 +94,14 @@
 
                 <!--Messaggistica-->
                 <div class="mainChat">
+
+                    
                     
                     <div class="message" :class="{received: message.status === 'received', sent: message.status === 'sent'}"
                         v-for="(message, indice) in userActive.messages" :key="indice">
                         
                         {{message.text}}
+                        
 
                         <div class="formatTime">
                             {{formatTime(message.date)}}
