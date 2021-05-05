@@ -170,6 +170,11 @@
     text-align: right;
     font-size: 12px ;
 }
+input[type="text"],
+input[type="search"]{
+    appearance: none;
+    outline: none;
+}
 
 
 
