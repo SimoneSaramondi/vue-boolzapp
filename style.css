@@ -114,6 +114,9 @@
     background-image: url(img/mine.jpg);
     border-bottom: 1px solid lightgray;
     overflow-y: scroll;
+    /*****/
+    display: flex;
+    flex-direction: column;
 }
 .textChat{
     background-color:rgb(236, 233, 233);
@@ -153,6 +156,7 @@
     margin: 5px;
     background-color: rgb(224, 235, 184);
     border-radius: 10px;
+    align-self: flex-start;
     
 }
 .message.sent{
@@ -160,7 +164,7 @@
     padding: 10px;
     margin: 5px;
     border-radius: 10px;
-    text-align: end;
+    align-self: flex-end;
 }
 
 
