@@ -53,7 +53,7 @@
                 <!--Miei contatti-->
                 <div class="myContacts">
 
-                    <div class="contctsSpace" v-for="(user, indice) in usersList" @click="changeActiveUser(indice)">
+                    <div class="contctsSpace" :class="(userActive == usersList[indice] ? 'contact-active' : null)"  v-for="(user, indice) in usersList" @click="changeActiveUser(indice)">
 
                         <div class="contactsImg">
                             <img :src="getAvatarPath(user.avatar)" alt="">

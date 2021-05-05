@@ -93,7 +93,7 @@ const globalUsersList = [
             },
             {
                 date: '10/01/2020 15:50:00',
-                text: 'Si, ma preferirei andare al cinema',
+                text: 'Si, ma preferirei andare al parco',
                 status: 'received'
             }
         ],
@@ -105,12 +105,12 @@ const globalUsersList = [
         messages: [
             {
                 date: '10/01/2020 15:30:55',
-                text: 'Lo sai che ha aperto una nuova pizzeria?',
+                text: 'Lo sai che ha aperto una nuova gelateria?',
                 status: 'sent'
             },
             {
                 date: '10/01/2020 15:50:00',
-                text: 'Si, ma preferirei andare al cinema',
+                text: 'Si, ma non ho fame',
                 status: 'received'
             }
         ],
@@ -122,12 +122,12 @@ const globalUsersList = [
         messages: [
             {
                 date: '10/01/2020 15:30:55',
-                text: 'Lo sai che ha aperto una nuova pizzeria?',
+                text: 'Lo sai che ho comprato una macchina?',
                 status: 'sent'
             },
             {
                 date: '10/01/2020 15:50:00',
-                text: 'Si, ma preferirei andare al cinema',
+                text: 'Si, BMW M3 nera opaco',
                 status: 'received'
             }
         ],

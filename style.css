@@ -14,7 +14,7 @@
 
 .container{
     background-color: white;
-    display: flex; /************************************************/
+    display: flex;
     height: 90vh;
 }
 
@@ -91,6 +91,9 @@
 .nomeContatto{
     padding: 10px 15px;
 }
+.myContacts{
+    overflow-y: scroll;
+}
 
 /*PARTE DI DESTRA*/
 .rightColumn{
@@ -111,6 +114,7 @@
     height: 480px;
     background-image: url(img/mine.jpg);
     border-bottom: 1px solid lightgray;
+    overflow-y: scroll;
 }
 .textChat{
     background-color:rgb(236, 233, 233);
@@ -142,3 +146,16 @@
 .iconeMessaggiato{
     padding: 15px;
 }
+.contact-active {
+    background-color: #e0d9d9;
+}
+
+
+
+
+
+
+
+
+
+

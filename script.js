@@ -2,7 +2,7 @@ const app = new Vue({
     el: "#app",
     data: {
         usersList: globalUsersList,
-        index:0,
+        //index:0,
         userActive: globalUsersList[0]
     },
     methods:{
