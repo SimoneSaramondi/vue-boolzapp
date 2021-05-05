@@ -57,7 +57,8 @@ const app = new Vue({
                 }
             });
         },  
-
-        
+        formatTime(date) {
+            return moment(date, "DD/MM/YYYY HH:mm:ss").format('HH:mm');
+        }        
     }
 })

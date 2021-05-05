@@ -166,6 +166,10 @@
     border-radius: 10px;
     align-self: flex-end;
 }
+.formatTime{
+    text-align: right;
+    font-size: 12px ;
+}
 
 
 
