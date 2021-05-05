@@ -65,18 +65,18 @@ const globalUsersList = [
         ],
     },
     {
-        name: 'Marco',
-        avatar: '_4',
+        name: 'Alessia',
+        avatar: '_io',
         visible: true,
         messages: [
             {
                 date: '10/01/2020 15:30:55',
-                text: 'Lo sai che ha aperto una nuova pizzeria?',
+                text: 'Ciao come stai?',
                 status: 'sent'
             },
             {
                 date: '10/01/2020 15:50:00',
-                text: 'Si, ma preferirei andare al cinema',
+                text: 'Bene, sto studiando',
                 status: 'received'
             }
         ],
