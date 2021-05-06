@@ -15,7 +15,7 @@ const app = new Vue({
         },
         // INDICE DELL'UTENTE CHE CON CUI CHATTO
         changeActiveUser(indice){
-            this.userActive = this.usersList[indice]
+            this.userActive = this.usersList[indice];
         },
         // MANDARE UN MESSAGGIO
         sendMessage(){
@@ -65,5 +65,5 @@ const app = new Vue({
         formatTime(date) {
             return moment(date, "DD/MM/YYYY HH:mm:ss").format('HH:mm');
         }        
-    }
+    },
 })
