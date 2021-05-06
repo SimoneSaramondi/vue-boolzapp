@@ -54,7 +54,7 @@ const app = new Vue({
             this.usersList.forEach((user) => {
                 let contactName = user.name.toLowerCase();
                 let searchedName = this.searchText.toLowerCase();
-                if(contactName.includes(searchedName)) {
+                if(contactName.startsWith(searchedName)) {
                     user.visible = true;
                 } else {
                     user.visible = false;
