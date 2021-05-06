@@ -93,26 +93,22 @@
                 </div>
 
                 <!--Messaggistica-->
-                <div class="mainChat">
-
-                    
+                <div class="mainChat">                    
                     
                     <div class="message" :class="{received: message.status === 'received', sent: message.status === 'sent'}"
                         v-for="(message, indice) in userActive.messages" :key="indice">
                         
-                        {{message.text}}
-                        
+                        {{message.text}}                        
 
                         <div class="formatTime">
                             {{formatTime(message.date)}}
                         </div>
-
                         
-                            <i class="fa fa-chevron-down f-right message-options" :class="{received: message.status === 'received', sent: message.status === 'sent'}"></i>
+                            <i class="fa fa-chevron-down message-options" :class="{received: message.status === 'received', sent: message.status === 'sent'}"></i>
 
                             <div class="message-options-panel" :class="{received: message.status === 'received', sent: message.status === 'sent'}">
-                                <div class="message-info">Info messaggio</div>
-                                <div class="message-destroy">Cancella messaggio</div>
+                                <!--<div class="message-info">Info messaggio</div>
+                                <div class="message-destroy">Cancella messaggio</div>-->
                             </div>
                         
 

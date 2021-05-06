@@ -176,55 +176,35 @@ input[type="search"]{
     outline: none;
 }
 
-/************/
-.message:hover .message-options,
-.message .message-options.active {
+/*FRECCE PER INFO E DISTRUZIONE MESSAGGIO*/
+.message:hover .message-options.sent,
+.message:hover .message-options.received{
     display: block;
 }
-
-.message .message-options.sent {
+.message .message-options.sent,
+.message .message-options.received {
     display: none;
     color: #929692;
     cursor: pointer;
     position: relative;
     top: -30px;
-    right: 16px;
-    
+    right: 16px;    
 }
-.message .message-options.received {
-    display: none;
-    color: #797c7e;
-    cursor: pointer;
-    position: relative;
-    top: -30px;
-    right: 16px;
-}
-
-.message .message-options-panel.sent {
-    position: absolute;
-    right: 0;
-    bottom: -75px;
+.message .message-options.sent.active .message-options-panel.sent,
+.message .message-options-panel.received {    
     width: 150px;
     height: 70px;
     background: white;
     box-shadow: 0px 0px 40px -15px rgba(0, 0, 0, 0.75);
 }
 
-.message .message-options-panel.received {
-    position: absolute;
-    right: 0;
-    bottom: -75px;
-    width: 150px;
-    height: 70px;
-    background: white;
-    box-shadow: 0px 0px 40px -15px rgba(0, 0, 0, 0.75);
-}
-
-.message .message-options-panel.active {
+/*.message .message-options-panel.sent.active,
+.message .message-options-panel.received.active{
     display: block;
 }
 
-.message .message-options-panel>div {
+.message .message-options-panel.sent>div,
+.message .message-options-panel.received>div {
     cursor: pointer;
     width: 100%;
     height: 50%;
@@ -233,9 +213,10 @@ input[type="search"]{
     text-align: center;
 }
 
-.message .message-options-panel>div:hover {
+.message .message-options-panel.sent>div:hover,
+.message .message-options-panel.received>div:hover {
     color: #B6B9BB;
-}
+}*/
 
 
 
