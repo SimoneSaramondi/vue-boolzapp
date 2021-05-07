@@ -60,7 +60,31 @@ const app = new Vue({
                     user.visible = false;
                 }
             });
-        },  
+        },
+        lastAccess(messagges){
+
+            const lastEnter = messagges[messagges.length - 1];
+            const lastDate = this.formatTime(lastEnter.date);
+
+            return lastDate;
+
+        },
+        getLastMsgString(messages){
+            if(messages.length === 0){
+                return "Nessun messaggio disponibile"
+            }
+
+            const lastMsg = messages[messages.length - 1];
+            const formatDate = this.formatTime(lastMsg.date);
+
+            let trimmedMsg = lastMsg.text.slice(0, 10);
+
+            if(lastMsg.text.length > 20){
+                trimmedMsg += "...";
+            }
+
+            return trimmedMsg + " - " + formatDate;
+        },
         // ORARIO DELLA CHAT
         formatTime(date) {
             return moment(date, "DD/MM/YYYY HH:mm:ss").format('HH:mm');
